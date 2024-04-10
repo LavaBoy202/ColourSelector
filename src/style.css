@@ -1,0 +1,170 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  box-sizing: border-box;
+}
+
+div#app {
+  display: flex;
+  height: 100vh;
+  flex-direction: row;
+}
+
+div#leftside {
+  height: 100%;
+  gap: 10px;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  align-items: center;
+}
+.shape:hover{
+  outline-color: lightblue;
+  outline: 4px solid lightblue;
+}
+
+div#rightside {
+  background-color: whitesmoke;
+  height: 100%;
+  padding: 10px;
+  flex: 1;
+}
+
+div#rightsidecontent {
+  height: 100%;
+  gap: 10px;
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+  border: 1px solid black;
+}
+div#message {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+div#display {
+  height: 100%;
+  padding: 10px;
+  gap: 10px;
+  margin: 10px;
+  display: flex;
+  flex: 2;
+  flex-direction: column;
+  align-items: center; /* Center children vertically */
+  justify-content: center; /* Center children horizontally */
+}
+
+div#displaySquare {
+  align-self: stretch;
+  justify-self: center;
+  aspect-ratio: 1 / 1;
+  display: flex; /* Use flexbox */
+  align-items: center; /* Center vertically */
+  justify-content: center; /* Center horizontally */
+}
+
+form > div {
+  margin: 10px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+label {
+  text-align: right;
+  width: 50px;
+}
+
+input {
+  width: 50px;
+  margin-left: 10px;
+}
+
+input[type="text"].error {
+  outline: 2px solid red;
+}
+
+select{
+  width: 80px;
+  height: 100%;
+
+}
+
+.enabledButton {
+  width: 80px;
+  padding: 5px;  
+}
+
+.disabledButton {
+  background-color: lightgrey;
+  border: 1px solid grey;
+  color: grey;
+}
+
+div#toolbar {
+  background-color: lightgrey;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  gap: 10px;
+  display: flex;
+  align-items: center;
+}
+
+div#content {
+  flex: 1;
+  display:block;
+  justify-content: space-between;
+  flex-direction: row;
+}
+
+div#editor {
+  background-color: whitesmoke;
+  height: 100%;
+  margin: 10px;
+  flex: 1;
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  gap: 10px;
+  border: 1px solid grey;
+}
+
+div#colouredRect {
+  border: 1px solid black;
+  flex: 2;
+  display: flex;
+}
+
+
+div#shapelist {
+  background-color: white;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  padding: 10px;
+  gap: 20px;
+  overflow-y: auto;
+  align-content: flex-start;
+}
+
+div#statusbar {
+  background-color: lightgrey;
+  color: black;
+  width: 100%;
+  height: 50px;
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}

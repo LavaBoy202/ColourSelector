@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/style.css" />
+    <title>Colour Editor</title>
+  </head>
+  <body>
+    <div id="app">
+      <div id="leftside">
+        <div id="toolbar">
+          <button id="addButton" class="enabledButton">Add</button>
+          <select name="shapesDD" id="shapes-select">
+            <option value="square">Square</option>
+            <option value="star">Star</option>
+            <option value="cat">Cat</option>
+            <option value="bullseye">Bulleye</option>
+          </select>
+          <button id="deleteButton" class="enabledButton">Delete</button>
+          <button id="clearButton" class="enabledButton">Clear</button>
+        </div>
+        <div id="shapelist"></div>
+        <div id="statusbar"></div>
+      </div>
+      <div id="rightside">
+        <div id="rightsidecontent">
+          <div id="display">
+            <div id="displaySquare"></div>
+          </div>
+          <div id="formcontainer"></div>
+          <div id="editor">
+            <form>
+              <div>
+                <label for="hue">Hue</label>
+                <input id="hueTextfield" type="number"/>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
